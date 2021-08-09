@@ -7,10 +7,7 @@ const sagaMiddleWare = createSagaMiddleWare();
 
 export const store = createStore(
   rootReducer,
-  compose(
-    applyMiddleware(sagaMiddleWare),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
+  compose(applyMiddleware(sagaMiddleWare))
 );
 
 sagaMiddleWare.run(rootWatcher);
