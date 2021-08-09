@@ -1,0 +1,20 @@
+@import "../../variables";
+.btn {
+  height: $input-height;
+  width: 135px;
+  color: #fff;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-radius: $border-radius;
+  &_submit {
+    background-color: $green-color;
+  }
+  &_cancel,
+  &_delete {
+    background-color: $red-color;
+  }
+  &_rent {
+    background-color: $blue-color;
+  }
+}

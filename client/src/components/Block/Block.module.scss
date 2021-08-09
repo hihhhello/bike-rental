@@ -1,0 +1,8 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  // grid-template-rows: minmax(82px, auto);
+  // grid-auto-rows: minmax(82px, 100px);
+  row-gap: 25px;
+  margin-top: 25px;
+}
